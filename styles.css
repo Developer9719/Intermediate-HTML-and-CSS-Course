@@ -7,3 +7,17 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* 
+CSS Styles 
+- Absoolute Units
+    - units that are always the same no matter the viewport size
+    - px
+- Relative Units
+    - units that are relative to the viewport size or other elements
+    - em
+        - relative to the font-size of the element
+    - rem
+        - relative to the font-size of the root element
+    - % (percentages)
+*/
