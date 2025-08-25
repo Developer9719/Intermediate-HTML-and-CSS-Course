@@ -32,3 +32,38 @@ Emmet
     - Enter the desired HTML element (e.g., div, p) and press Enter
     - The selected text will be wrapped in the specified element
 -->
+
+<!--
+SVG
+- tool to create high quality dynamic graphics
+- Scalable Vector Graphics
+    - able to scale to any size and retain the quality and filesize
+    - Used for 
+        - icons
+        - graphics
+        - charts
+        - large simple images
+        - patterned backgrounds
+        - applying effects to other elements via SVG filters-->
+
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!--
+    xmlns is the XML namespace for SVG
+    viewBox is a list of four space-separated values that define the position and dimension in user space of an SVG viewport
+    -->
+   <rect x=0 y=0 width=100 height=100 fill="burlywood"/>
+    <path d="M 10 10 H 90 V 90 L 10 60" fill="transparent" stroke="black" stroke-width="3"/>
+  <circle cx=50 cy=50 r=20 class="svg-circle"/>
+    <g class="svg-text-group">
+      <text x="20" y="25" rotate="10" id="hello-text">Hello!</text>
+      <use href="#hello-text" x="-10" y="65" fill="white"/>
+    </g>
+</svg>
+<!--
+Embedding SVG 
+- linked embedding
+    - <img src="image.svg" alt="Description of SVG">
+- inline embedding
+    - directly include SVG code within HTML file
+    - makes the properties accessible and easily modifiable
+-->
