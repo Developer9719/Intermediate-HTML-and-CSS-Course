@@ -28,3 +28,30 @@ CSS Styles
     - vmin (viewport minimum)
     - vmax (viewport maximum)
 */
+
+/*
+More Text Styles
+- Fonts
+    - Font Stacks
+        - A list of fonts to be used for an element
+        - The browser will use the first available font based on the fonts installed on the users system
+        - Example: font-family: "Helvetica Neue", Arial, sans-serif;
+    - Web Fonts
+        - can use a font that wont be available on every users device but you need to import it to your project
+            - <link rel="preconnect" href="https://fonts.googleapis.com">
+            - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            - <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            or
+            - @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); for CSS file
+-Text Styles
+    - font-style is used to make text italic
+    - letter-spacing is used to alter the space between letters
+    - line-height is used to set the amount of space above and below inline elements
+    - text-transform is used to change the case of text
+        - uppercase
+        - lowercase
+        - capitalize
+    - text-shadow is used to add shadow to text
+    - ellipsis is used to indicate that text has been truncated
+
+*/
