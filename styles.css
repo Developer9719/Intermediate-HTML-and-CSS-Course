@@ -100,14 +100,30 @@ Advanced CSS Selectors
     - ~ is used to select all siblings of an element
         - Example: div ~ p will select all p elements that are siblings of a div element
 - Pseudo Selectors
-    - Pseudo Class Selectors
+    - Dynamic and User Action Pseudo Class Selectors
         - :hover is used to select an element when the user hovers over it
         - :focus is used to select an element when it has focus
         - :active is used to select an element when it is being activated (e.g. clicked on)
+        - :link is used to select unvisited links
+        - :visited is used to select visited links
+    - Structural Pseudo Class Selectors
         - :nth-child(n) is used to select the nth child of an element
         - :first-child is used to select the first child of an element
         - :last-child is used to select the last child of an element
-        - :link is used to select unvisited links
-        - :visited is used to select visited links
-
+        - :root is used to select the root element of the document
+        - :empty is used to select elements that have no children
+        - :only-child is used to select elements that are the only child of their parent
+    - Pseudo Element Selectors
+        - ::before is used to insert content before an element
+        - ::after is used to insert content after an element
+        - ::first-letter is used to select the first letter of an element
+        - ::first-line is used to select the first line of an element
+        - ::marker is used to select li element bullets or numbering
+        - ::selection is used to select the portion of an element that is selected by the user
+- Attribute Selectors
+    - [attr] is used to select elements with a specific attribute
+    - [attr=value] is used to select elements with a specific attribute value
+    - [attr^=value] is used to select elements with an attribute value that starts with a specific string
+    - [attr$=value] is used to select elements with an attribute value that ends with a specific string
+    - [attr*=value] is used to select elements with an attribute value that contains a specific substring
 */
