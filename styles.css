@@ -57,5 +57,57 @@ More Text Styles
 
 /*
 More CSS Properties
-- 
+- Background
+    - background-color is used to set the background color of an element
+    - background-image is used to set a background image for an element
+    - background-repeat is used to control the repetition of a background image
+    - background-position is used to set the position of a background image
+    - background-size is used to control the size of a background image
+- Border
+    - border is used to set the border of an element
+    - border-width is used to set the width of a border
+    - border-style is used to set the style of a border
+    - border-color is used to set the color of a border
+    - border-radius is used to set the rounding of the corners of a border
+- Box-Shadow
+    - box-shadow is used to add shadow to an element
+    - box-shadow: h-offset v-offset blur spread color;
+    - h-offset is the horizontal offset of the shadow
+    - v-offset is the vertical offset of the shadow
+    - blur is the blur radius of the shadow
+    - spread is the spread radius of the shadow
+    - color is the color of the shadow
+- Overflow
+    - overflow is used to control what happens to content that is too large to fit in an element
+    - overflow: visible; is the default value
+    - overflow: hidden; will clip the content and hide it
+    - overflow: scroll; will add a scrollbar to the element
+    - overflow: auto; will add a scrollbar only if the content is too large
+- Opacity
+    - opacity is used to control the transparency of an element
+    - opacity: 0; is fully transparent
+    - opacity: 1; is fully opaque
+    - opacity: 0.5; is 50% transparent
+*/
+
+/*
+Advanced CSS Selectors
+- Child and Sibling Combinators
+    - > is used to select direct children of an element
+        - Example: div > p will select all p elements that are direct children of a div element
+    - + is used to select the next sibling of an element
+        - Example: div + p will select the first p element that is immediately after a div element
+    - ~ is used to select all siblings of an element
+        - Example: div ~ p will select all p elements that are siblings of a div element
+- Pseudo Selectors
+    - Pseudo Class Selectors
+        - :hover is used to select an element when the user hovers over it
+        - :focus is used to select an element when it has focus
+        - :active is used to select an element when it is being activated (e.g. clicked on)
+        - :nth-child(n) is used to select the nth child of an element
+        - :first-child is used to select the first child of an element
+        - :last-child is used to select the last child of an element
+        - :link is used to select unvisited links
+        - :visited is used to select visited links
+
 */
