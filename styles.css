@@ -127,3 +127,27 @@ Advanced CSS Selectors
     - [attr$=value] is used to select elements with an attribute value that ends with a specific string
     - [attr*=value] is used to select elements with an attribute value that contains a specific substring
 */
+
+/* Positioning */
+/*
+Absolute Positioning
+- position: absolute; is used to position an element relative to its nearest positioned ancestor
+- The element is removed from the normal document flow
+- top, right, bottom, and left properties are used to specify the position
+- these elements don't effect the layout of other elements and don't get effected by other elements
+Fixed Positioning
+- position: fixed; is used to position an element relative to the viewport
+- The element is removed from the normal document flow
+- top, right, bottom, and left properties are used to specify the position
+- these elements don't effect the layout of other elements and don't get effected by other elements
+Sticky Positioning
+- position: sticky; is used to position an element based on the user's scroll position
+- The element is treated as relative until it crosses a specified threshold, then it is treated as fixed
+- top, right, bottom, and left properties are used to specify the position
+- these elements don't effect the layout of other elements and don't get effected by other elements
+Relative
+- position: relative; is used to position an element relative to its normal position
+- The element is not removed from the normal document flow
+- top, right, bottom, and left properties are used to specify the position
+- these elements can affect the layout of other elements and can be affected by other elements
+*/
