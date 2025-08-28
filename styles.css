@@ -151,3 +151,29 @@ Relative
 - top, right, bottom, and left properties are used to specify the position
 - these elements can affect the layout of other elements and can be affected by other elements
 */
+
+/* CSS Functions */
+/*
+Functions
+- IE: rgba();
+- any value in CSS with a () beside it
+- calc()
+    - calc() is a CSS function that allows you to perform calculations to determine CSS property values.
+    - It can be used to calculate lengths, percentages, and other values.
+    - Example: width: calc(100% - 50px);
+- min()
+    - min() is a CSS function that allows you to set a minimum value for a CSS property.
+    - It can be used to ensure that a property value does not go below a certain threshold.
+    - Example: width: min(100%, 50px);
+        - This will set the width to 50px if 100% of the parent element's width is greater than 50px.
+- max()
+    - max() is a CSS function that allows you to set a maximum value for a CSS property.
+    - It can be used to ensure that a property value does not go above a certain threshold.
+    - Example: width: max(100%, 50px);
+        - This will set the width to 100% of the parent element's width if it is less than 50px.
+- clamp()
+    - clamp() is a CSS function that allows you to set a value that can grow and shrink between a defined minimum and maximum.
+    - It can be used to create responsive designs that adapt to different screen sizes.
+    - Example: width: clamp(300px, 50%, 800px);
+        - This will set the width to 50% of the parent element's width, but not less than 300px or more than 800px.
+*/
