@@ -177,3 +177,23 @@ Functions
     - Example: width: clamp(300px, 50%, 800px);
         - This will set the width to 50% of the parent element's width, but not less than 300px or more than 800px.
 */
+
+/* Custom Properties */
+/*
+Custom Properties 
+- aka CSS variables
+- work the same as any other programming language variable
+- accepts 2 parameters the custom property name and a fallback value
+- can be defined using the --custom-property-name syntax
+- can be reused throughout the stylesheet
+- can be dynamically changed with JavaScript
+- can be accessed using the var() function
+    - IE: var(--custom-property-name)
+- Fallback value
+    - property that is used if the custom property is invalid
+- Scope
+    - declared by the selector
+    - can be global or local
+    - global variables are available throughout the entire stylesheet and are declared in :root{} which is the same as targeting the html itself
+    - local variables are only available within the selector they are declared in   
+*/
