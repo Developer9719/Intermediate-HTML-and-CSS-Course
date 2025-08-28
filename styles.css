@@ -197,3 +197,11 @@ Custom Properties
     - global variables are available throughout the entire stylesheet and are declared in :root{} which is the same as targeting the html itself
     - local variables are only available within the selector they are declared in   
 */
+
+/* Frameworks and Preprocessors */
+/*
+- Framework CSS
+    - Bootstrap CSS is a type of framework CSS
+- CSS Preprocessors
+    - SASS and LESS are CSS preprocessors
+*/
