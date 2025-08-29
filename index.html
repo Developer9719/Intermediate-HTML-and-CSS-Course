@@ -90,3 +90,127 @@ Default Browser Styles
 - Browsers apply their own default styles to HTML elements
 - These styles can vary between browsers
 -->
+
+<!-- Forms -->
+<form action="example.com/path" method="post">
+  <label for="first_name">First Name: </label>
+  <input type="text" id="first_name" placeholder="Your name here" name="first_name">
+
+  <textarea>Default text</textarea>
+
+  <select name="Car">
+    <option value="mercedes">Mercedes</option>
+    <option value="tesla">Tesla</option>
+    <option value="volvo">Volvo</option>
+    <option value="bmw">BMW</option>
+    <option value="mini">Mini</option>
+    <option value="ford">Ford</option>
+  </select>
+
+  <select name="fashion">
+  <optgroup label="Clothing">
+    <option value="t_shirt">T-Shirts</option>
+    <option value="sweater">Sweaters</option>
+    <option value="coats">Coats</option>
+  </optgroup>
+  <optgroup label="Foot Wear">
+    <option value="sneakers">Sneakers</option>
+    <option value="boots">Boots</option>
+    <option value="sandals">Sandals</option>
+  </optgroup>
+</select>
+
+<div>
+  <input type="radio" id="child" name="ticket_type" value="child">
+  <label for="child">Child</label>
+</div>
+
+<div>
+  <input type="radio" id="adult" name="ticket_type" value="adult">
+  <label for="adult">Adult</label>
+</div>
+
+<div>
+  <input type="radio" id="senior" name="ticket_type" value="senior">
+  <label for="senior">Senior</label>
+</div>
+
+<div>
+  <input type="checkbox" id="sausage" name="topping" value="sausage">
+  <label for="sausage">Sausage</label>
+</div>
+
+<div>
+  <input type="checkbox" id="onions" name="topping" value="onions">
+  <label for="onions">Onions</label>
+</div>
+
+<div>
+  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+  <label for="pepperoni">Pepperoni</label>
+</div>
+
+<div>
+  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+  <label for="mushrooms">Mushrooms</label>
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+<!--
+- Action attribute specifies the URL where the form data should be sent
+- Method attribute specifies the HTTP method (GET or POST) to be used when sending form data
+  - GET is used to retrieve data from the server
+  - POST is used to change data on the server
+
+- Form Controls
+  - Input Elements
+    - <input type="text">
+    - <input type="password">
+    - <input type="email">
+    - <input type="number">
+    - <input type="date">
+    - <input type="file">
+    - <input type="checkbox">
+    - <input type="radio">
+    - <input type="submit">
+  - Labels
+    - For attribute and id attribute on the input elements need to match
+  - Placeholder Attribute
+    - displays the text inside the input field when it is empty
+  - Name Attribute
+    - used to reference form data after a form is submitted
+  -Textarea Element
+    - multi-line text input control
+    - can be resized by the user
+    - The text between the opening and closing tags acts as the default value
+    - accepts rows and cols attributes to specify the visible area
+  - Select Elements
+    - This displays a dropdown list of options for the user to choose from.
+    - Each option is defined using the <option> element
+    - The value attribute of each <option> element is sent to the server when the form is submitted.
+    - The selected attribute is given to the option that should be pre-selected when the page loads.
+    - The optgroup element is used to group related options within a select element.
+      - Each optgroup can have a label attribute to provide a name for the group.
+  - Radio  Buttons
+    - Used for the same type of data as dropdowns but this is better for less than 5 choices
+    - The default option is set up using the checked attribute on the input element
+  - Checkboxes
+    - Similar to radio buttons but allows for multiselection
+    - The default option is set up using the checked attribute on the input element
+  - Buttons
+    - Submit Buttons
+      - This is the default action for a button element
+    - Reset Buttons
+      - Clears all the input fields in a form
+    - Generic Buttons
+      - Can be used to trigger JavaScript functions when clicked
+      - Needs the type attribute to be set to "button"
+
+- Organizing Form Elements
+  - Fieldset elements
+    - Used to group related elements within a form
+    - Typically used with a legend element to provide a caption, this is used right after an opening fieldset tag
+
+  - Form controls can be used outside of form elements to display user input back to the user from javascript
