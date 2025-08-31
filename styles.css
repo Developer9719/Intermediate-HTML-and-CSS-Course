@@ -245,4 +245,51 @@ Positioning
 - grid-column-end: Defines the ending position (grid line) of a grid item within a grid column.
 - grid-row-start: Defines the starting position (grid line) of a grid item within a grid row.
 - grid-row-end: Defines the ending position (grid line) of a grid item within a grid row.
+Advanced Grid Properties
+- 
 */
+.grid-container {
+  resize: both; /* allows user to resize the container */
+  overflow: auto;
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: skyblue;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+
+  /* Same as the above 2 lines */
+  
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(5, 150px);
+
+  /* fr gives an equal fraction to all grid items in the row or column the rule 
+  is set to */
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+
+  /*
+  - min-content: BEST PRACTICE TO SET THIS YOURSELF.
+  - min(): Returns the smallest of all values passed in
+  - max(): Returns the largest of all values passed in
+  - The above 2 are meant for dynamic values
+  */
+}
+
+.grid-item {
+  background-color: #444;
+  text-align: center;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  padding: 12px;
+}
+
+p {
+  margin: 12px auto 24px;
+}
+
+img {
+  height: 60px;
+}
