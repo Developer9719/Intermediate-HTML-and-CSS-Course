@@ -211,3 +211,20 @@ Custom Properties
 Styling Form Validations
 - target passed and failed styles can be applied using CSS with the :valid and :invalid pseudo-classes
 */
+
+/* CSS Grid */
+/* 
+Grid Container 
+- display: grid;, display: inline-grid;
+- Parent element is marked with the class of container and all its child elements
+automatically become grid items.
+- Grid items are only direct children of the grid container not children of children
+- Grid items can also be grid containers though
+- Grid track is the space between grid items
+    - grid-template-columns
+    - grid-template-rows
+    - grid-template: 50px 50px 50px / 50px 50px;
+        - This will create a grid with 3 rows and 2 columns.
+Explicit vs Implicit Grid
+- 
+*/
