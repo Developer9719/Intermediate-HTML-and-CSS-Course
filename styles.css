@@ -215,7 +215,8 @@ Styling Form Validations
 /* CSS Grid */
 /* 
 Grid Container 
-- display: grid;, display: inline-grid;
+- display: grid;: Container stretches to take up space
+- display: inline-grid;: Container only takes up as much space as its content
 - Parent element is marked with the class of container and all its child elements
 automatically become grid items.
 - Grid items are only direct children of the grid container not children of children
@@ -226,5 +227,22 @@ automatically become grid items.
     - grid-template: 50px 50px 50px / 50px 50px;
         - This will create a grid with 3 rows and 2 columns.
 Explicit vs Implicit Grid
-- 
+- If you add a 5th item to a 2x2 grid it creates a 3rd row automatically (implicit)
+- If you define a grid with specific rows and columns (explicit)
+- Explicit properties are not carried over into implicit grid items.
+    - You can set the properties for these using grid-auto, grid-auto-rows, and grid-auto-columns
+Gap
+- AKA gutter or alley
+- column-gap
+Lines
+- Grid lines are created implicitly after grid tracks (space between grid items)
+are defined
+    - Numbered left to right and top to bottom 
+    - A 3x3 grid has vertical lines numbered from 1 to 4 (columns) and
+    horizontal lines numbered from 1 to 4 (rows)
+Positioning 
+- grid-column-start: Defines the starting position (grid line) of a grid item within a grid column.
+- grid-column-end: Defines the ending position (grid line) of a grid item within a grid column.
+- grid-row-start: Defines the starting position (grid line) of a grid item within a grid row.
+- grid-row-end: Defines the ending position (grid line) of a grid item within a grid row.
 */
