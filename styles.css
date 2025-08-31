@@ -274,6 +274,14 @@ Advanced Grid Properties
   - min(): Returns the smallest of all values passed in
   - max(): Returns the largest of all values passed in
   - The above 2 are meant for dynamic values
+
+  - minmax(): Sets the minimum and maximum size of a grid item and is only valid 
+  as a grid property
+  - clamp(): Sets a value between a defined minimum and maximum or ideal value. The
+  ideal value is the preferred size of the grid item and is a dynamics measurement
+  whereas the minimum and maximum values are static measurements.
+  - auto-fit and auto-fill: Return the largest possible positive integer without
+  grid-items overflowing the container
   */
 }
 
@@ -293,3 +301,11 @@ p {
 img {
   height: 60px;
 }
+
+/* Flexbox with Grid */
+/*
+Content First
+- Best for Flexbox
+Layout First
+- Best for Grid
+*/
